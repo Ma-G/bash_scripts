@@ -2,7 +2,7 @@
 
 # Takes a target file as an argument
 # strips it from empty lines and comments
-# saves the file with ".bp. + current date and time" prefix 
+# saves the file with ".bp. + current date and time" suffix 
 # overwrites the original file
 
 
