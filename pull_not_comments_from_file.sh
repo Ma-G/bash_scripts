@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash -e
 
 # Takes a target file as an argument
 # strips it from empty lines and comments
