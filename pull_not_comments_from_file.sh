@@ -1,4 +1,4 @@
-#!/bin/bash -e
+#!/bin/bash 
 
 # Takes a target file as an argument
 # strips it from empty lines and comments
@@ -13,7 +13,7 @@ path=$(realpath "$1" | awk -F'/' 'sub(FS $NF,x)')
 file_bp=$file.bp.$(date +%F-%H:%M)
 tmp_file=$file.$(date +%H%M%S)
 
-cd "$path" || exit
+cd "$path" || true
 cp -p "$file" "$file_bp"
 
 grep -v '^[[:space:]]*$' "$file" > "$tmp_file"
