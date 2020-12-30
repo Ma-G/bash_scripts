@@ -8,6 +8,7 @@
 
 file=$(echo "$1" | awk -F/ '{print $NF}')
 
+# creates a path to cd into - the awk command gets rid of the file name
 path=$(realpath "$1" | awk -F'/' 'sub(FS $NF,x)')
 file_bp=$file.bp.$(date +%F-%H:%M)
 tmp_file=$file.$(date +%H%M%S)
